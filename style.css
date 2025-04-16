@@ -1,0 +1,75 @@
+/* Center the calculator */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f4f8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Calculator Container */
+.calculator {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  width: 300px;
+}
+
+/* Display screen */
+#display {
+  width: 100%;
+  height: 60px;
+  font-size: 2rem;
+  text-align: right;
+  padding: 10px;
+  border: none;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Buttons grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* Button styles */
+button {
+  padding: 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #d0d0d0;
+}
+
+button:active {
+  background-color: #c0c0c0;
+}
+
+/* Special styling for operator and action buttons */
+button:nth-child(1), /* Clear button */
+button:nth-child(2),
+button:nth-child(3),
+button:nth-child(4),
+button:nth-child(16) {
+  background-color: #ffa726;
+  color: white;
+}
+
+button:nth-child(1):hover,
+button:nth-child(2):hover,
+button:nth-child(3):hover,
+button:nth-child(4):hover,
+button:nth-child(16):hover {
+  background-color: #fb8c00;
+}
